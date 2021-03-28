@@ -15,7 +15,7 @@ export class NoteInterface {
   /**
    * Fecha en la que se crea la nota
    */
-  date: string;
+  date: Date | string;
 
   /**
    * Contenido de la nota

@@ -16,7 +16,11 @@ export class NotesService {
    */
   constructor() {
     // Inicializando las notas
-    this.notes = JSON.parse(localStorage.getItem('notes')) || [];
+    this.setNotes( JSON.parse(localStorage.getItem('notes')) || [] );
+  }
+
+  setNotes(notes: NoteInterface[]){
+    this.notes = notes;
   }
 
   /**

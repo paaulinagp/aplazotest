@@ -1,11 +1,11 @@
 <mat-button-toggle-group #group="matButtonToggleGroup">
-  <mat-button-toggle value="active" aria-label="Activas" checked (click)="changeToggle('active')">
+  <mat-button-toggle class="toggle-active" value="active" aria-label="Activas" checked (click)="changeToggle('active')">
     ACTIVAS
   </mat-button-toggle>
-  <mat-button-toggle value="archived" aria-label="Archivadas" (click)="changeToggle('archived')">
+  <mat-button-toggle class="toggle-archived" value="archived" aria-label="Archivadas" (click)="changeToggle('archived')">
     ARCHIVADAS
   </mat-button-toggle>
-  <mat-button-toggle value="deleted" aria-label="Eliminadas" (click)="changeToggle('deleted')">
+  <mat-button-toggle class="toggle-deleted" value="deleted" aria-label="Eliminadas" (click)="changeToggle('deleted')">
     ELIMINADAS
   </mat-button-toggle>
 </mat-button-toggle-group>
