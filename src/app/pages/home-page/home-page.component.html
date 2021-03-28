@@ -1,0 +1,48 @@
+<mat-button-toggle-group #group="matButtonToggleGroup">
+  <mat-button-toggle value="active" aria-label="Activas" checked>
+    ACTIVAS
+  </mat-button-toggle>
+  <mat-button-toggle value="archived" aria-label="Archivadas">
+    ARCHIVADAS
+  </mat-button-toggle>
+  <mat-button-toggle value="deleted" aria-label="Eliminadas">
+    ELIMINADAS
+  </mat-button-toggle>
+</mat-button-toggle-group>
+
+<p *ngFor="let note of notesService.getNotes(group.value)">
+  {{ note | json }} 
+  <button 
+    mat-raised-button 
+    color="primary"
+    (click)="changeStatus(1,'archived')"
+  > 
+    Archivar nota
+  </button>
+  <button 
+    mat-raised-button 
+    color="primary"
+    (click)="changeStatus(1,'deleted')"
+  > 
+    Eliminar nota
+  </button>
+</p>
+
+<p>
+  <button 
+    mat-raised-button 
+    color="primary"
+    (click)="addNote()"
+  > 
+    Agregar nota
+  </button>
+</p>
+<p>
+  <button 
+    mat-raised-button 
+    color="primary"
+    (click)="addNote()"
+  > 
+    Elim
+  </button>
+</p>
