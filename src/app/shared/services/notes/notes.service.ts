@@ -56,6 +56,15 @@ export class NotesService {
   }
 
   /**
+   * Devuelve id siguiente del array de notas
+   *
+   * @returns Regresa el nuevo id para guardar en las notas
+   */
+  getNextIdNote() {
+    return this.notes.length > 0 ? this.notes[this.notes.length-1].id + 1 : 1;
+  }
+
+  /**
    * Guarda notas en el storage
    */
   private saveNotes() {

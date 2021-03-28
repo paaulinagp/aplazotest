@@ -9,6 +9,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { SharedModule } from 'src/app/shared/shared.module';
 
@@ -24,6 +26,8 @@ import { HomePageComponent } from './home-page/home-page.component';
     MatButtonModule,
     MatIconModule,
     MatButtonToggleModule,
+    MatCardModule,
+    MatDialogModule,
     SharedModule,
   ],
   exports: [
