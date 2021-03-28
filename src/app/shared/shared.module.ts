@@ -11,15 +11,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { DialogComponent } from './components/dialog/dialog.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NoteComponent } from './components/note/note.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ToggleComponent } from './components/toggle/toggle.component';
 
 
 @NgModule({
-  declarations: [DialogComponent, NoteComponent],
-  exports: [DialogComponent, NoteComponent],
+  declarations: [DialogComponent, NoteComponent, HeaderComponent, ToggleComponent],
+  exports: [DialogComponent, NoteComponent, HeaderComponent, ToggleComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -30,7 +33,8 @@ import { NoteComponent } from './components/note/note.component';
     MatButtonModule,
     MatButtonToggleModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule
   ]
 })
 export class SharedModule { }

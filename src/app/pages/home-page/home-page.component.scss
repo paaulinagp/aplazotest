@@ -1,0 +1,23 @@
+.container {
+  width: 95%;
+  min-height: 100vh;
+  margin: auto;
+  margin-top: 20px;
+  display: block;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.notes {
+  display: flex;
+  flex-flow: row wrap;
+
+  > .note {
+    margin: 10px;
+    width: 250px;
+  }
+}

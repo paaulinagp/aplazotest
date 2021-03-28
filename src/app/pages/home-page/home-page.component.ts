@@ -9,6 +9,7 @@ import { NotesService } from 'src/app/shared/services/notes/notes.service';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
+  noteStatus: string;
 
   /**
    * Constructor
@@ -21,7 +22,9 @@ export class HomePageComponent implements OnInit {
   /**
    * Ciclo de vida OnInit
    */
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.noteStatus = 'active';
+  }
 
   /**
    * Se modifica el statud de una nota

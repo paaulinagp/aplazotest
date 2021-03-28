@@ -9,7 +9,21 @@
     </p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button color="primary" (click)="button.emit('archived')">Archivar nota</button>
-    <button mat-button color="primary" (click)="button.emit('deleted')">Eliminar nota</button>
+    <button
+      *ngIf="note.status==='active'"
+      mat-button 
+      color="primary" 
+      (click)="button.emit('archived')"
+    >
+      Archivar nota
+    </button>
+    <button
+      *ngIf="note.status!=='deleted'"
+      mat-button 
+      color="primary" 
+      (click)="button.emit('deleted')"
+    >
+      Eliminar nota
+    </button>
   </mat-card-actions>
 </mat-card>
